@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Yo what store?"
+reply = $stdin.gets.chomp
+
+@downtown = Store.create(name:'Dahntahn')
+
+@downtown.valid?
+p @downtown.errors.messages
+
